@@ -45,7 +45,7 @@
 <br>
 
 ## 基礎學習資源
-- [The Little Go Book](https://www.openmymind.net/The-Little-Go-Book/) 
+- [The Little Go Book](https://www.openmymind.net/The-Little-Go-Book/) ([PDF](https://www.openmymind.net/assets/go/go.pdf))
 - [The Little Go Book 繁體中文翻譯版](https://kevingo.github.io/the-little-go-book/)
 - [[中] runoob](http://www.runoob.com/go/go-tutorial.html)
 - [[英] Tutorial Point](https://www.tutorialspoint.com/go/index.htm)
