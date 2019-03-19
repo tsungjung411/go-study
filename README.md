@@ -20,10 +20,12 @@
     $ go version
     go version go1.12.1 linux/amd64
     ```
-
+<br>
 
 ## 直接在線上寫 code
 - https://play.golang.org/
+
+<br>
 
 ## Hello, World!
 - 簡易範例 (檔案名稱：```my_first_go.go```)
@@ -39,6 +41,8 @@
   $ go run my_first_go.go 
   Hello, GO!
   ```
+
+<br>
 
 ## 基礎學習資源
 - [The Little Go Book](https://www.openmymind.net/The-Little-Go-Book/) 
