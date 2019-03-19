@@ -25,6 +25,21 @@
 ## 直接在線上寫 code
 - https://play.golang.org/
 
+## Hello, World!
+- 簡易範例 (檔案名稱：```my_first_go.go```)
+  ```go
+  package main
+
+  func main() {
+    println("Hello, GO!")
+  }
+  ```
+- 編譯執行：
+  ```bash
+  $ go run my_first_go.go 
+  Hello, GO!
+  ```
+
 ## 基礎學習資源
 - [The Little Go Book](https://www.openmymind.net/The-Little-Go-Book/) 
 - [The Little Go Book 繁體中文翻譯版](https://kevingo.github.io/the-little-go-book/)
