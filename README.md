@@ -1,5 +1,13 @@
 ## 準備 Go 環境
 - https://golang.org/dl/
+  - 下載 xxx.tar.gz
+  - 解壓縮放到想放的資料夾
+  - 將路徑註冊到系統變數（在 ~/.bashrc 檔案裡加入底下）
+    ```bash
+    # 2019.03.19, Go environment
+    export PATH=$PATH:/usr/local/go/bin
+    ```
+  - source ~/.bashrc
 
 ## 線上寫 code
 - https://play.golang.org/
