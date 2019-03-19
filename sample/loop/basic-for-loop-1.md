@@ -1,5 +1,6 @@
 ## Q: 1 + 2 + 3 + ... + 100
 
+## 檔名：basic-for-loop-1.go 
 ```go
 package main
 
