@@ -1,4 +1,4 @@
-## Q: 找出 2～100 的質數
+## Q: 找出 2～100 的質數，並印出總個數
 
 ## 檔名：basic-for-loop-4.go 
 ```go
@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+  count := 0
   for i := 2; i <= 100; i++ {
     
     // cannot use i (type int) as type float64 in argument to math.Sqrt
@@ -28,8 +29,10 @@ func main() {
     
     if is_prime {
       fmt.Println(i, "是質數")
+      count++
     }
   }
+  println("總共有", count, "個")
 }
 ```
 
@@ -60,6 +63,7 @@ $ go run basic-for-loop-4.go
 83 是質數
 89 是質數
 97 是質數
+總共有 25 個
 ```
 
 ## API 參考
