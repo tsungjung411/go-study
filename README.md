@@ -2,11 +2,15 @@
 - https://golang.org/dl/
   - 下載 xxx.tar.gz
   - 解壓縮放到想放的資料夾
+    - 直接點選檔案解壓縮
+    - 或是下指令 ```sudo tar -C /usr/local -xzf xxx.tar.gz```
+    
   - 將路徑註冊到系統變數（在 ~/.bashrc 檔案裡加入底下）
     ```bash
     # 2019.03.19, Go environment
     export PATH=$PATH:/usr/local/go/bin
     ```
+    
   - 重新載入設定檔
     ```bash
     $ source ~/.bashrc
