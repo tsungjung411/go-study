@@ -19,7 +19,7 @@ func main() {
   }
   
   if len(os.Args) < 2 {
-    return
+    os.Exit(1) // has an error
   }
   
   // array to int (string-to-int)
@@ -39,6 +39,10 @@ func main() {
 ```
 
 ```bash
+$ go run basic-while-loop-1.go
+Args[0] = /tmp/go-build801510665/b001/exe/basic-while-loop-1
+exit status 1
+
 $ go run basic-while-loop-1.go 1230
 Args[0] = /tmp/go-build801510665/b001/exe/basic-while-loop-1
 Args[1] = 1230
