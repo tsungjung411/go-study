@@ -7,7 +7,10 @@
     # 2019.03.19, Go environment
     export PATH=$PATH:/usr/local/go/bin
     ```
-  - source ~/.bashrc
+  - 重新載入設定檔
+    ```bash
+    source ~/.bashrc
+    ```
 
 ## 線上寫 code
 - https://play.golang.org/
