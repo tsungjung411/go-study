@@ -49,6 +49,7 @@
 - [The Little Go Book 繁體中文翻譯版](https://kevingo.github.io/the-little-go-book/)
 - [[中] runoob](http://www.runoob.com/go/go-tutorial.html)
 - [[英] Tutorial Point](https://www.tutorialspoint.com/go/index.htm)
+- [[英] Go: For loops explained](https://programming.guide/go/for-loop.html)
 
 <br>
 
