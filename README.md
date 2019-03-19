@@ -54,7 +54,7 @@
 <br>
 
 ## 如何尋找 go 問題與解法
-- 關鍵字加 golang，如 ```golang how to get the type```
+- 關鍵字加 golang (go + language)<br>如 ```golang how to get the type```
 
 <br>
 
