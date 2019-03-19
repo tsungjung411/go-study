@@ -53,5 +53,10 @@
 
 <br>
 
+## 如何尋找 go 問題與解法
+- 關鍵字加 golang，如 ```golang how to get the type```
+
+<br>
+
 ## 官方 API 文件
 - [https://golang.org/pkg/fmt/#Println](https://golang.org/pkg/fmt/#Println)
