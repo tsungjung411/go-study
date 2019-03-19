@@ -63,5 +63,5 @@ $ go run basic-for-loop-4.go
 ```
 
 ## API 參考
-- [math/#Sqrt](https://golang.org/pkg/math/#Sqrt)
-- [math/#Floor](https://golang.org/pkg/math/#Floor)
+- [math.Sqrt](https://golang.org/pkg/math/#Sqrt)
+- [math.Floor](https://golang.org/pkg/math/#Floor)
