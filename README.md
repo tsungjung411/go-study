@@ -18,7 +18,7 @@
     ```
 
 
-## 線上寫 code
+## 直接在線上寫 code
 - https://play.golang.org/
 
 ## 基礎學習資源
