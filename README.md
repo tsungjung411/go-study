@@ -15,7 +15,7 @@
     ```bash
     $ source ~/.bashrc
     ```
-  - 測試指令
+  - 開新的終端機(terminal)來測試指令
     ```bash
     $ go version
     go version go1.12.1 linux/amd64
