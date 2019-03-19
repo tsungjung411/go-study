@@ -9,8 +9,14 @@
     ```
   - 重新載入設定檔
     ```bash
-    source ~/.bashrc
+    $ source ~/.bashrc
     ```
+  - 測試指令
+    ```bash
+    $ go version
+    go version go1.12.1 linux/amd64
+    ```
+
 
 ## 線上寫 code
 - https://play.golang.org/
