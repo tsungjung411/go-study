@@ -66,6 +66,6 @@ $ go run basic-for-loop-4.go
 總共有 25 個
 ```
 
-## API 參考
+## API 索引
 - [math.Sqrt](https://golang.org/pkg/math/#Sqrt)
 - [math.Floor](https://golang.org/pkg/math/#Floor)
