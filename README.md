@@ -53,6 +53,11 @@
 
 <br>
 
+## 進階學習資源
+- [不得不知道的golang知識點之nil](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/5262/)
+
+<br>
+
 ## 如何尋找 go 問題與解法
 - 關鍵字加 golang (go + language)<br>如 ```golang how to get the type```
 
