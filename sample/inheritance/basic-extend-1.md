@@ -1,11 +1,12 @@
 
-## Q: [狗] 類別繼承自 [動物] 類別
+## Q: [人] 類別繼承自 [動物] 類別
 
 ## 檔名：basic-extend-1.md.go 
 ```go
 package main
 
 import "fmt" // format
+import "strconv"
 
 // class Animal {
 //     void Talk() {...}
@@ -15,36 +16,39 @@ type Animal struct {
 }
 
 func (animal *Animal) Talk() {
-  fmt.Println("Hello! My name is " + animal.Name)
+  fmt.Println("Hello! My name is " + animal.Name + ".")
 }
 
 
-// class Dog extends Animal {
+// class Person extends Animal {
 //     void Talk() {...} // overwrite
 // }
-type Dog struct {
+type Person struct {
   *Animal // not equal to: Animal *Animal
+  Age int
 }
 
-func (dog *Dog) Talk() {
-  fmt.Println("Wang! I am " + dog.Name)
+func (person *Person) Talk() {
+  fmt.Println("Hi! I'm " + person.Name +
+    ". I am " + strconv.Itoa(person.Age) + " years old.")
 }
 
 
 func main() { // entry point
-  dog := &Dog{
-    &Animal{"Puppy"},
+  person := &Person{
+    &Animal{"Jeremy"},
+    25,
   }
-  fmt.Println("dog.name: " + dog.Name)
-  fmt.Print("dog.Talk(): "); dog.Talk() // overwritten
-  fmt.Print("dog.Animal.Talk(): "); dog.Animal.Talk()
+  fmt.Println("person.name: " + person.Name)
+  fmt.Print("person.Talk(): "); person.Talk() // overwritten
+  fmt.Print("person.Animal.Talk(): "); person.Animal.Talk()
 }
 ```
 
 ## 執行結果
 ```bash
 $ go run basic-extend-1.md.go 
-dog.name: Puppy
-dog.Talk(): Wang! I am Puppy
-dog.Animal.Talk(): Hello! My name is Puppy
+person.name: Jeremy
+person.Talk(): Hi! I'm Jeremy. I am 25 years old.
+person.Animal.Talk(): Hello! My name is Jeremy.
 ```
