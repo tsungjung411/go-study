@@ -47,6 +47,9 @@ func main() { // entry point
   fmt.Println()
   
   fmt.Print("person.ShowType(): "); person.ShowType()
+  //fmt.Print("person.Animal.ShowType(): "); person.Animal.ShowType()
+  // error:
+  //   person.Animal.ShowType undefined (type *Animal has no field or method ShowType)
 }
 ```
 
