@@ -37,10 +37,15 @@ func main() { // entry point
     &Animal{"Jeremy"},
     "Human",
   }
+  
   fmt.Println("person.name: " + person.Name)
   fmt.Println("person.Animal.name: " + person.Animal.Name)
+  fmt.Println()
+  
   fmt.Print("person.Talk(): "); person.Talk()
   fmt.Print("person.Animal.Talk(): "); person.Animal.Talk()
+  fmt.Println()
+  
   fmt.Print("person.ShowType(): "); person.ShowType()
 }
 ```
@@ -50,7 +55,9 @@ func main() { // entry point
 $ go run basic-extend-1.md.go 
 person.name: Jeremy
 person.Animal.name: Jeremy
+
 person.Talk(): Hello! My name is Jeremy.
 person.Animal.Talk(): Hello! My name is Jeremy.
+
 person.ShowType(): I am Human
 ```
