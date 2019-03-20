@@ -1,12 +1,11 @@
 
 ## Q: [人] 類別繼承自 [動物] 類別
 
-## 檔名：basic-extend-1.md.go 
+## 檔名：basic-extend-1.go 
 ```go
 package main
 
 import "fmt" // format
-import "strconv"
 
 // class Animal {
 //     void Talk() {...}
@@ -21,27 +20,36 @@ func (animal *Animal) Talk() {
 
 
 // class Person extends Animal {
-//     void Talk() {...} // overwrite
+//     void ShowType() {...}
 // }
 type Person struct {
   *Animal // not equal to: Animal *Animal
-  Age int
+  Type string
 }
 
-func (person *Person) Talk() {
-  fmt.Println("Hi! I'm " + person.Name +
-    ". I am " + strconv.Itoa(person.Age) + " years old.")
+func (person *Person) ShowType() {
+  fmt.Println("I am " + person.Type)
 }
 
 
 func main() { // entry point
   person := &Person{
     &Animal{"Jeremy"},
-    25,
+    "Human",
   }
+  
   fmt.Println("person.name: " + person.Name)
-  fmt.Print("person.Talk(): "); person.Talk() // overwritten
+  fmt.Println("person.Animal.name: " + person.Animal.Name)
+  fmt.Println()
+  
+  fmt.Print("person.Talk(): "); person.Talk()
   fmt.Print("person.Animal.Talk(): "); person.Animal.Talk()
+  fmt.Println()
+  
+  fmt.Print("person.ShowType(): "); person.ShowType()
+  //fmt.Print("person.Animal.ShowType(): "); person.Animal.ShowType()
+  // error:
+  //   person.Animal.ShowType undefined (type *Animal has no field or method ShowType)
 }
 ```
 
@@ -49,6 +57,10 @@ func main() { // entry point
 ```bash
 $ go run basic-extend-1.md.go 
 person.name: Jeremy
-person.Talk(): Hi! I'm Jeremy. I am 25 years old.
+person.Animal.name: Jeremy
+
+person.Talk(): Hello! My name is Jeremy.
 person.Animal.Talk(): Hello! My name is Jeremy.
+
+person.ShowType(): I am Human
 ```
