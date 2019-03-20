@@ -43,8 +43,8 @@ func main() { // entry point
 
 ## 執行結果
 ```bash
+$ go run basic-extend-1.md.go 
 dog.name: Puppy
 dog.Talk(): Wang! I am Puppy
 dog.Animal.Talk(): Hello! My name is Puppy
-
 ```
