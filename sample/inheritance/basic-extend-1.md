@@ -38,8 +38,8 @@ func main() { // entry point
     "Human",
   }
   
-  fmt.Println("person.name: " + person.Name)
-  fmt.Println("person.Animal.name: " + person.Animal.Name)
+  fmt.Println("person.Name: " + person.Name)
+  fmt.Println("person.Animal.Name: " + person.Animal.Name)
   fmt.Println()
   
   fmt.Print("person.Talk(): "); person.Talk()
@@ -56,8 +56,8 @@ func main() { // entry point
 ## 執行結果
 ```bash
 $ go run basic-extend-1.md.go 
-person.name: Jeremy
-person.Animal.name: Jeremy
+person.Name: Jeremy
+person.Animal.Name: Jeremy
 
 person.Talk(): Hello! My name is Jeremy.
 person.Animal.Talk(): Hello! My name is Jeremy.
