@@ -24,43 +24,32 @@ func (animal *Animal) Talk() {
 // }
 type Person struct {
   *Animal // not equal to: Animal *Animal
-  Type string
-}
-
-func (person *Person) ShowType() {
-  fmt.Println("I am " + person.Type)
+  Name string
 }
 
 
 func main() { // entry point
   person := &Person{
-    &Animal{"Jeremy"},
-    "Human",
+    &Animal{"Anonymous"},
+    "Jeremy",
   }
   
-  fmt.Println("person.name: " + person.Name)
-  fmt.Println("person.Animal.name: " + person.Animal.Name)
+  fmt.Println("person.Name: " + person.Name) // Jeremy
+  fmt.Println("person.Animal.Name: " + person.Animal.Name) // Anonymous
   fmt.Println()
   
-  fmt.Print("person.Talk(): "); person.Talk()
-  fmt.Print("person.Animal.Talk(): "); person.Animal.Talk()
+  fmt.Print("person.Talk(): "); person.Talk() // Anonymous
+  fmt.Print("person.Animal.Talk(): "); person.Animal.Talk() // Anonymous
   fmt.Println()
-  
-  fmt.Print("person.ShowType(): "); person.ShowType()
-  //fmt.Print("person.Animal.ShowType(): "); person.Animal.ShowType()
-  // error:
-  //   person.Animal.ShowType undefined (type *Animal has no field or method ShowType)
 }
 ```
 
 ## 執行結果
 ```bash
 $ go run basic-extend-1.md.go 
-person.name: Jeremy
-person.Animal.name: Jeremy
+person.Name: Jeremy
+person.Animal.Name: Anonymous
 
-person.Talk(): Hello! My name is Jeremy.
-person.Animal.Talk(): Hello! My name is Jeremy.
-
-person.ShowType(): I am Human
+person.Talk(): Hello! My name is Anonymous. <-- 並不是存取 Person 的 Name
+person.Animal.Talk(): Hello! My name is Anonymous.
 ```
