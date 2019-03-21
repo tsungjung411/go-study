@@ -20,7 +20,7 @@ func (animal *Animal) Talk() {
 
 
 // class Person extends Animal {
-//     @Overwrite
+//     @Override
 //     void Talk() {...}
 // }
 type Person struct {
