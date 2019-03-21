@@ -6,5 +6,4 @@
 
 
 ## 問題集
-- [How to find a type of an object in Go?](https://stackoverflow.com/questions/20170275/how-to-find-a-type-of-an-object-in-go)
-  - [Sample code](type-1.md)
+- [How to set default values in Go structs](https://stackoverflow.com/questions/37135193/how-to-set-default-values-in-go-structs)
