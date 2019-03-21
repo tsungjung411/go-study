@@ -28,8 +28,8 @@ type Person struct {
   *Animal // not equal to: Animal *Animal
 }
 
-func (animal *Person) Talk() {
-  fmt.Println("Hi! I'm " + animal.Name + ".")
+func (person *Person) Talk() {
+  fmt.Println("Hi! I'm " + person.Name + ".")
 }
 
 
