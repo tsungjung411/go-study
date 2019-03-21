@@ -8,7 +8,8 @@ package main
 import "fmt" // format
 
 // class Animal {
-//     void Talk() {...}
+//     public String Name;
+//     public void Talk() {...}
 // }
 type Animal struct {
   Name string
@@ -21,7 +22,7 @@ func (animal *Animal) Talk() {
 
 // class Person extends Animal {
 //     @Override
-//     void Talk() {...}
+//     public void Talk() {...}
 // }
 type Person struct {
   *Animal // not equal to: Animal *Animal
